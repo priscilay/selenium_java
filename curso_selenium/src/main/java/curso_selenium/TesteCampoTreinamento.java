@@ -28,7 +28,7 @@ public class TesteCampoTreinamento {
 		System.setProperty("webdriver.chrome.driver", "\\Users\\priscila.franca\\Downloads\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().setSize(new Dimension(1200, 765));
-		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+		driver.get("65file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
 		System.getProperty("user.dir");
 		
 		driver.findElement(By.id("elementosForm:sugestoes")).sendKeys("Priscila");
