@@ -1,16 +1,12 @@
 package curso_selenium;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
-
 
 import junit.framework.Assert;
 
@@ -29,25 +25,21 @@ public class Desafios {
 		dsl = new DSL(driver);
 	}
 	
-	@After
+	//@After
 	public void fim() {
 		driver.quit();
 	}
 	
 	@Test
 	public void preencherForm() {
-		driver.findElement(By.id("elementosForm:nome")).sendKeys("Priscila");
-		driver.findElement(By.id("elementosForm:sobrenome")).sendKeys("Ribs");
-		driver.findElement(By.id("elementosForm:sexo:1")).click();
-		driver.findElement(By.id("elementosForm:comidaFavorita:1")).click();
-		WebElement element = driver.findElement(By.id("elementosForm:escolaridade"));
-		Select comboEsc = new Select(element);
-		comboEsc.selectByIndex(6);
-		WebElement elementEsp = driver.findElement(By.id("elementosForm:esportes"));
-		Select comboEsp = new Select(elementEsp);
-		comboEsp.selectByVisibleText("Corrida");
-		driver.findElement(By.id("elementosForm:sugestoes")).sendKeys("namaste");
-		driver.findElement(By.id("elementosForm:cadastrar")).click();
+		dsl.escrever("elementosForm:nome", "Priscila");
+		dsl.escrever("elementosForm:sobrenome", "Ribs");
+		dsl.clicar("elementosForm:sexo:1");
+		dsl.clicar("elementosForm:comidaFavorita:1");
+		dsl.selecionarCombo("elementosForm:escolaridade", "mestrado");
+		dsl.selecionarCombo("elementosForm:esportes", "Corrida");
+		dsl.escrever("elementosForm:sugestoes", "namaste");
+		dsl.clicar("elementosForm:cadastrar");
 		
 		//Corrigir os textos
 		Assert.assertTrue(driver.findElement(By.id("resultado")).getText().startsWith("Cadastrado!"));
@@ -75,7 +67,7 @@ public class Desafios {
 	
 	@Test
 	public void testeWindow() {
-		driver.findElement(By.id("buttonPopUpEasy")).click();
+		dsl.clicar("buttonPopUpEasy");
 		driver.switchTo().window("");
 		driver.findElement(By.tagName("textarea")).sendKeys("ok");
 		driver.close();
@@ -94,21 +86,17 @@ public class Desafios {
 	
 	@Test
 	public void validarNomeObrigatorio() {
-		driver.findElement(By.id("elementosForm:cadastrar")).click();
-		Alert alert = driver.switchTo().alert();
-		String textAlert = alert.getText();
-		Assert.assertEquals("Nome eh obrigatorio", textAlert);
-		alert.accept();
+		dsl.clicar("elementosForm:cadastrar");
+		Assert.assertEquals("Nome eh obrigatorio", dsl.msgAlert());
+		dsl.okAlert();
 	}
 	
 	@Test
 	public void validarSobrenomeObrigatorio() {
-		dsl.escreve("elementosForm:nome", "Pri");
-		driver.findElement(By.id("elementosForm:cadastrar")).click();
-		Alert alert = driver.switchTo().alert();
-		String textAlert = alert.getText();
-		Assert.assertEquals("Sobrenome eh obrigatorio", textAlert);
-		alert.accept();
+		dsl.escrever("elementosForm:nome", "Pri");
+		dsl.clicar("elementosForm:cadastrar");
+		Assert.assertEquals("Sobrenome eh obrigatorio", dsl.msgAlert());
+		dsl.okAlert();
 	}
 }
 	

@@ -3,6 +3,7 @@ package curso_selenium;
 import java.util.List;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -12,6 +13,24 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class TesteCampoTreinamento {
+	
+	private WebDriver driver;
+	private DSL dsl;
+	
+	@Before
+	public void init(){
+		System.setProperty("webdriver.chrome.driver", "\\Users\\priscila.franca\\Downloads\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().setSize(new Dimension(1200, 765));
+		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+		System.getProperty("user.dir");
+		dsl = new DSL(driver);
+	}
+	
+	//@After
+	public void fim() {
+		driver.quit();
+	}
 
 
 	/**@Test
@@ -152,16 +171,9 @@ public class TesteCampoTreinamento {
 	
 	@Test
 	public void testeTextoPage() {
-		System.setProperty("webdriver.chrome.driver", "\\Users\\priscila.franca\\Downloads\\drivers\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		driver.manage().window().setSize(new Dimension(1200, 765));
-		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
-		System.getProperty("user.dir");
-		WebElement texto = driver.findElement(By.tagName("h3"));
-		Assert.assertEquals("Campo de Treinamento", texto.getText());
-		
-		WebElement text2 = driver.findElement(By.className("facilAchar"));
-		Assert.assertEquals("Cuidado onde clica, muitas armadilhas...", text2.getText());
-		driver.quit();
+		String textoPage = dsl.obterTexto(By.tagName("h3"));
+		Assert.assertEquals("Campo de Treinamento", textoPage);
+		String textoPage2 = dsl.obterTexto(By.className("facilAchar"));
+		Assert.assertEquals("Cuidado onde clica, muitas armadilhas...", textoPage2);
 	}
 }
