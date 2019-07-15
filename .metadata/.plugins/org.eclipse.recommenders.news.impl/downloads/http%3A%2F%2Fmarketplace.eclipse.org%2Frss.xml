@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="http://marketplace.eclipse.org/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <channel>
+    <title>Eclipse Plugins, Bundles and Products - Eclipse Marketplace</title>
+    <link>http://marketplace.eclipse.org/</link>
+    <description></description>
+    <language>en</language>
+     <atom:link href="http://marketplace.eclipse.org/rss.xml" rel="self" type="application/rss+xml" />
+      <item>
+    <title>EGradle IDE</title>
+    <link>http://marketplace.eclipse.org/content/egradle-ide</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/EGradle-Profile-Image-Marketplace.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2019-07-10 07:52&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Albert%20Tregnaghi%22&quot;&gt;Albert Tregnaghi&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2016-09-13 14:26&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/atregnaghi/listings&quot; title=&quot;Albert Tregnaghi&quot;&gt;Albert Tregnaghi&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;&lt;strong&gt;EGradle is a lightweight, fast and comfortable gradle integration for eclipse&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+Features overview
+&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Console and Eclipse can be used parallel without conflicts&lt;/li&gt;
+&lt;li&gt;New Project Wizard
+&lt;ul&gt;&lt;li&gt;Build in templates for full java projects (single and multi project)&lt;/li&gt;
+&lt;li&gt;Possibility to create custom templates &lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://marketplace.eclipse.org/content/egradle-editor&quot; rel=&quot;nofollow&quot;&gt;EGradle Editor&lt;/a&gt;
+&lt;ul&gt;&lt;li&gt;Syntax highlighting
+&lt;ul&gt;&lt;li&gt;Supporting Java, Groovy, Gradle keywords, GroovyDoc etc.&lt;/li&gt;
+&lt;li&gt;Colors customizable&lt;/li&gt;
+&lt;li&gt;Also additional default colors for dark theme&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Outline view + Quick outline&lt;/li&gt;
+&lt;li&gt;Code completion and tooltips&lt;/li&gt;
+&lt;li&gt;Parse error handling&lt;/li&gt;
+&lt;li&gt;Bracket switching and highlighting, auto close on curly brackets&lt;/li&gt;
+&lt;li&gt;Block comments (CTRL + 7)&lt;/li&gt;
+&lt;li&gt;Hyperlinking to other gradle files, URLs, Java and Groovy types&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Gradle execution
+&lt;ul&gt;&lt;li&gt;Launch configurations&lt;/li&gt;
+&lt;li&gt;Quick launch&lt;/li&gt;
+&lt;li&gt;Compile and evaluation errors occurring at launch time are marked in editor and error view&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;JUnit Integration
+&lt;ul&gt;&lt;li&gt;Launch tests
+&lt;ul&gt;&lt;li&gt;Toolbar icon to launch all tests&lt;/li&gt;
+&lt;li&gt;By launch configurations&lt;/li&gt;
+&lt;li&gt;Launch from editor&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Launched tests results are automatically shown in junit result&lt;/li&gt;
+&lt;li&gt;Import all junit results from existing console gradle build results to JUnit view by one click&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Virtual root project&lt;/li&gt;
+&lt;li&gt;Synchronization by one click&lt;/li&gt;
+&lt;li&gt;Keywords are highlighted in Console&lt;/li&gt;
+&lt;li&gt;Integrated eclipse help&lt;/li&gt;
+&lt;li&gt;Multiple ways to import gradle projects&lt;/li&gt;
+&lt;li&gt;Can automatically set build folders as &quot;derived&quot;&lt;/li&gt;
+&lt;li&gt;Rebuild working sets on re-importing gradle projects&lt;/li&gt;
+&lt;/ul&gt;
+Additional Links
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/de-jcup/egradle/wiki&quot; rel=&quot;nofollow&quot;&gt;EGradle Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rawgit.com/de-jcup/egradle/master/egradle-plugin-main/html/toc.html&quot; rel=&quot;nofollow&quot;&gt;Online help preview (master branch)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLnO8pgGpD7DlvsszAIjM26_2_0B9VJV4n&quot; rel=&quot;nofollow&quot;&gt;Tutorial playlist on YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://plus.google.com/u/0/b/110015234908380752132/collection/s8j0ME&quot; rel=&quot;nofollow&quot;&gt;EGradle news at Google+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/de-jcup/egradle/issues&quot; rel=&quot;nofollow&quot;&gt;Issue tracker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/de-jcup/egradle/releases&quot; rel=&quot;nofollow&quot;&gt;Release history&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/de-jcup/egradle&quot; rel=&quot;nofollow&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Tue, 13 Sep 2016 18:26:23 +0000</pubDate>
+ <dc:creator>atregnaghi</dc:creator>
+ <guid isPermaLink="false">3071167 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/egradle-ide#comments</comments>
+  </item>
+  <item>
+    <title>EGradle Editor</title>
+    <link>http://marketplace.eclipse.org/content/egradle-editor</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/EGradle-Profile-Image-Editor-Marketplace.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2019-07-10 07:48&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Albert%20Tregnaghi%22&quot;&gt;Albert Tregnaghi&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2017-06-14 06:02&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/atregnaghi/listings&quot; title=&quot;Albert Tregnaghi&quot;&gt;Albert Tregnaghi&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;EGradle Editor as standalone plugin, so other IDEs can use the editor implementation as well or users just install the editor.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://marketplace.eclipse.org/content/egradle-ide&quot; rel=&quot;nofollow&quot;&gt;EGradle IDE&lt;/a&gt; does contain this editor which has much features:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Code completion and tooltips&lt;/li&gt;
+&lt;li&gt;Syntax highlighting
+&lt;ul&gt;&lt;li&gt;Supporting Java, Groovy, Gradle keywords, GroovyDoc etc.&lt;/li&gt;
+&lt;li&gt;Colors customizable&lt;/li&gt;
+&lt;li&gt;Also additional default colors for dark theme&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Outline view + Quick outline&lt;/li&gt;
+&lt;li&gt;Parse error handling&lt;/li&gt;
+&lt;li&gt;Bracket switching and highlighting, auto close on curly brackets&lt;/li&gt;
+&lt;li&gt;Block comments (CTRL + 7)&lt;/li&gt;
+&lt;li&gt;Hyperlinking to other gradle files, URLs, Java and Groovy types&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Additional Links&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/de-jcup/egradle/wiki&quot; rel=&quot;nofollow&quot;&gt;EGradle Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rawgit.com/de-jcup/egradle/master/egradle-plugin-main/html/user_guide/editor.html&quot; rel=&quot;nofollow&quot;&gt;Online help preview (master branch)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLnO8pgGpD7DlvsszAIjM26_2_0B9VJV4n&quot; rel=&quot;nofollow&quot;&gt;Tutorial playlist on YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://plus.google.com/u/0/b/110015234908380752132/collection/s8j0ME&quot; rel=&quot;nofollow&quot;&gt;EGradle news at Google+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/de-jcup/egradle/issues&quot; rel=&quot;nofollow&quot;&gt;Issue tracker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/de-jcup/egradle/releases&quot; rel=&quot;nofollow&quot;&gt;Release history&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/de-jcup/egradle&quot; rel=&quot;nofollow&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Wed, 14 Jun 2017 10:02:03 +0000</pubDate>
+ <dc:creator>atregnaghi</dc:creator>
+ <guid isPermaLink="false">3493769 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/egradle-editor#comments</comments>
+  </item>
+  <item>
+    <title>pgCodeKeeper</title>
+    <link>http://marketplace.eclipse.org/content/pgcodekeeper</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/app_icon128_1.png&quot; width=&quot;80&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2019-07-10 04:48&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Technology%2C%20LLC%22&quot;&gt;Technology, LLC&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2018-05-04 06:16&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/mgaliev0jc/listings&quot; title=&quot;pgCodeKeeper Team&quot;&gt;pgCodeKeeper Team&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Finds differences between database objects and creates migration scripts, interactively or automatically. More info on &lt;a href=&quot;https://pgcodekeeper.org&quot; rel=&quot;nofollow&quot;&gt;https://pgcodekeeper.org&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Fri, 04 May 2018 10:16:27 +0000</pubDate>
+ <dc:creator>mgaliev0jc</dc:creator>
+ <guid isPermaLink="false">4065142 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/pgcodekeeper#comments</comments>
+  </item>
+  <item>
+    <title>HCL RTist</title>
+    <link>http://marketplace.eclipse.org/content/hcl-rtist</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/rtist.gif&quot; width=&quot;88&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2019-07-10 04:03&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22HCL%20Technologies%22&quot;&gt;HCL Technologies&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2019-07-04 12:45&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/mmohlin/listings&quot; title=&quot;Mattias Mohlin&quot;&gt;Mattias Mohlin&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;HCL RTist (&quot;&lt;strong&gt;R&lt;/strong&gt;eal&lt;strong&gt;Ti&lt;/strong&gt;me &lt;strong&gt;s&lt;/strong&gt;oftware &lt;strong&gt;t&lt;/strong&gt;ooling&quot;) is a modeling and development environment for creating stateful event-driven realtime applications in C++. Such applications are often embedded and/or IoT applications. HCL RTist supports the Unified Modeling Language (UML) and its real-time profile (UML-RT) which allows you to develop your application at a higher abstraction level, and with more automation, compared to writing it manually in C++.&lt;/p&gt;
+&lt;p&gt;Some of the key features of HCL RTist include:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Development of realtime applications using graphical UML diagrams such as state charts and composite structure diagrams&lt;/li&gt;
+&lt;li&gt;A code view and code editor (based on Eclipse CDT) for writing C++ code for model elements, such as code for state transitions&lt;/li&gt;
+&lt;li&gt;A model compiler for generating optimized C++ code from the model and to build it into executables or libraries. The build process is highly customizable and allows multiple versions of an application to be built from the same source model.&lt;/li&gt;
+&lt;li&gt;A highly efficient run-time library (&quot;TargetRTS&quot;) which provides your application with useful services such as message-based communication, state machines, timers, logging and much more. The TargetRTS is delivered as source code so you can build it for your platform of choice and customize it as needed.&lt;/li&gt;
+&lt;li&gt;Code-to-model synchronization which allows you to make changes in generated C++ code and have them automatically synchronized back to the model&lt;/li&gt;
+&lt;li&gt;A model debugger which allows you to debug your application at model level. You can debug your application both locally and remotely when it runs on the target, and model debugging can be combined with traditional code debugging using Eclipse CDT.&lt;/li&gt;
+&lt;li&gt;Compare and merge of model and code changes&lt;/li&gt;
+&lt;li&gt;Support for team development. Any SCM system can be used, but if you choose Git you will get superior support by means of an EGit integration that provides full support for RTist model files when using EGit.&lt;/li&gt;
+&lt;li&gt;Publishing models to a web server and accessing them from a web browser. This simplifies collaboration and enables all project members to contribute to the development of models.&lt;/li&gt;
+&lt;li&gt;Traceability between model elements and related items stored in other systems such as requirements, test cases etc. Support for generation of reports that may also include information about such related items.&lt;/li&gt;
+&lt;li&gt;Support for migrating UML-RT models created in IBM Rational Rose RealTime and IBM Rational Software Architect RealTime Edition.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;For more information about HCL RTist see &lt;a href=&quot;https://www.devops-community.com/realtime-software-tooling-rtist.html&quot; rel=&quot;nofollow&quot;&gt;this page&lt;/a&gt;. Note that you can try HCL RTist in a &lt;a href=&quot;https://demoportal.hclpnp.com&quot; rel=&quot;nofollow&quot;&gt;virtual environment&lt;/a&gt; before you decide to install it.&lt;/p&gt;
+&lt;p&gt;You need a license to use HCL RTist. For academic and non-commercial use the license can be obtained without cost. For commercial use it&#039;s possible to get a free trial license for evaluating the product. Visit &lt;a href=&quot;https://www.hcltech.com/software/contact-support-sales&quot; rel=&quot;nofollow&quot;&gt;this page&lt;/a&gt; to get a license, or contact &lt;a href=&quot;mailto:rtist@hcl.com&quot; rel=&quot;nofollow&quot;&gt;rtist@hcl.com&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Thu, 04 Jul 2019 16:45:55 +0000</pubDate>
+ <dc:creator>mmohlin</dc:creator>
+ <guid isPermaLink="false">4705727 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/hcl-rtist#comments</comments>
+  </item>
+  <item>
+    <title>veloeclipse</title>
+    <link>http://marketplace.eclipse.org/content/veloeclipse</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/default_images/default_2.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/mmisingnameirr/listings&quot; title=&quot;Missing name Mising name&quot;&gt;Missing name Mising name&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2019-07-10 03:28&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2017-08-23 02:11&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Veloeclipse is a HTML/XML/JSP/Velocity Editor for Eclipse (with Angularjs Support)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Wed, 23 Aug 2017 06:11:50 +0000</pubDate>
+ <dc:creator>mmisingnameirr</dc:creator>
+ <guid isPermaLink="false">3615136 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/veloeclipse#comments</comments>
+  </item>
+  <item>
+    <title>Snyk Vuln Scanner</title>
+    <link>http://marketplace.eclipse.org/content/snyk-vuln-scanner</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/snyk_eclipse.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2019-07-10 03:27&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Snyk%22&quot;&gt;Snyk&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2019-07-05 10:39&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/ssecurity/listings&quot; title=&quot;Snyk Security&quot;&gt;Snyk Security&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;This is an IDE extension that helps you detect and fix security issues in your project.&lt;/p&gt;
+&lt;p&gt;By scanning against the vast Snyk database, we can identify and advise you how to fix security problems in your open source dependencies.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Fri, 05 Jul 2019 14:39:26 +0000</pubDate>
+ <dc:creator>ssecurity</dc:creator>
+ <guid isPermaLink="false">4706981 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/snyk-vuln-scanner#comments</comments>
+  </item>
+  <item>
+    <title>pCloudy Plugin</title>
+    <link>http://marketplace.eclipse.org/content/pcloudy-plugin</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/pCloudy_logo.png&quot; width=&quot;106&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2019-07-10 02:10&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Smart%20Software%20Testing%20Solution%22&quot;&gt;Smart Software Testing Solution&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2018-09-07 06:15&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/pnairt6a/listings&quot; title=&quot;Pratap Kumar  Raju&quot;&gt;Pratap Kumar  Raju&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://www.pcloudy.com&quot; rel=&quot;nofollow&quot;&gt;pCloudy.com&lt;/a&gt; is a Unified App Testing Platform for performing manual as well as automation testing on more than 500 mobile devices (smartphones &amp;amp; tablets) hosted on cloud. It provides hosts of other services like bot testing, in-field user experience testing.&lt;/p&gt;
+&lt;p&gt;pCloudy.com provides a plugin for Eclipse IDE. Using the plugin you can create a &lt;a href=&quot;https://www.pcloudy.com/device-tunnel/&quot; rel=&quot;nofollow&quot;&gt;DeviceTunnel&lt;/a&gt;, and also do manual and automation testing of mobile apps. The plugin provides a user interface to connect to the pCloudy platform. You can upload apps, book devices and perform your testing right from your IDE.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;A registered account with pCloudy having enough credits.&lt;/li&gt;
+&lt;li&gt;Latest web browsers on local machine&lt;/li&gt;
+&lt;li&gt;Latest version of Eclipse&lt;/li&gt;
+&lt;li&gt;Eclipse pCloudy plugin&lt;/li&gt;
+&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Fri, 07 Sep 2018 10:15:50 +0000</pubDate>
+ <dc:creator>pnairt6a</dc:creator>
+ <guid isPermaLink="false">4262962 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/pcloudy-plugin#comments</comments>
+  </item>
+  <item>
+    <title>Yakode Code Recommender</title>
+    <link>http://marketplace.eclipse.org/content/yakode-code-recommender</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/logo-s.png&quot; width=&quot;80&quot; height=&quot;78&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2019-07-09 22:36&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Yakode.com%22&quot;&gt;Yakode.com&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sun, 2019-07-07 22:19&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/yservice/listings&quot; title=&quot;Yakode Service&quot;&gt;Yakode Service&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;&lt;strong&gt;The Yakode Code Recommender &lt;/strong&gt;is a great tool for Java developers. It minimizes the input and maximizes productivity. All analysis and recommendations are done in your clients.&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;
+&lt;p&gt;Line Based Code Recommendation: One letter to a word&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Context Awared Proposal: Smart proposal in different context&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt; Reuse Existed Code: Analyse and reuse your existed code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Command Template: Predefined and customized template&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://www.yakode.com/docs&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;Learn more...&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.yakode.com&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;Home Page&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Mon, 08 Jul 2019 02:19:55 +0000</pubDate>
+ <dc:creator>yservice</dc:creator>
+ <guid isPermaLink="false">4708900 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/yakode-code-recommender#comments</comments>
+  </item>
+  <item>
+    <title>Asciidoctor Editor</title>
+    <link>http://marketplace.eclipse.org/content/asciidoctor-editor</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/asciidoctor-editor-logo_0.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2019-07-09 18:41&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Albert%20Tregnaghi%22&quot;&gt;Albert Tregnaghi&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2018-03-15 15:51&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/atregnaghi/listings&quot; title=&quot;Albert Tregnaghi&quot;&gt;Albert Tregnaghi&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;h2&gt;Asciidoctor Editor&lt;/h2&gt;
+&lt;p&gt;This eclipse plugin is a text editor for asciidoc files.&lt;/p&gt;
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Fast html preview&lt;/li&gt;
+&lt;li&gt;Uses &lt;a href=&quot;https://github.com/de-jcup/asp&quot; rel=&quot;nofollow&quot;&gt;ASP 1.0.0&lt;/a&gt; for out-of-the-box usage (no installation of asciidoctor required) or can use installed asciidoctor with customizable CLI arguments&lt;/li&gt;
+&lt;li&gt;Can export to PDF&lt;/li&gt;
+&lt;li&gt;Code completion for pathes used in includes, images, diagrams etc.&lt;/li&gt;
+&lt;li&gt;Supports text based diagram generation&lt;br /&gt;
+	( &lt;a href=&quot;https://github.com/stathissideris/ditaa&quot; rel=&quot;nofollow&quot;&gt;ditaa&lt;/a&gt;, &lt;a href=&quot;https://plantuml.com/&quot; rel=&quot;nofollow&quot;&gt; plantuml&lt;/a&gt; and &lt;a href=&quot;https://www.graphviz.org/&quot; rel=&quot;nofollow&quot;&gt;graphviz&lt;/a&gt; )&lt;/li&gt;
+&lt;li&gt;3 different preview modes:
+&lt;ul&gt;&lt;li&gt;Inline preview with editor
+&lt;ul&gt;&lt;li&gt;Vertical splitted&lt;/li&gt;
+&lt;li&gt;Horizontal splitted&lt;/li&gt;
+&lt;li&gt;Both variantes are immediately updated on text save&lt;/li&gt;
+&lt;li&gt;When cursor comes in line of anchor or headline it automatically scrolls internal preview to location - also opposite way, when selecting a headline in preview the editor part will be selected and shown (if not an included part...)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;External preview
+&lt;ul&gt;&lt;li&gt;Using external Browser&lt;/li&gt;
+&lt;li&gt;Update per autorefresh in browser
+&lt;ul&gt;&lt;li&gt;time configurable&lt;/li&gt;
+&lt;li&gt;can be turned off also&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Interesting when having multiple monitors and wanting to have full sized text document and preview&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Outline and Quickoutline
+&lt;ul&gt;&lt;li&gt;Headlines&lt;/li&gt;
+&lt;li&gt;Includes (double click opens file)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Syntax highlighting in Text Editor
+&lt;ul&gt;&lt;li&gt;Colors can be customized.&lt;/li&gt;
+&lt;li&gt;Dark theme automatic color support.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Templates + Simple code completion for existing words&lt;/li&gt;
+&lt;li&gt;Tooltips&lt;/li&gt;
+&lt;li&gt;Hyperlinking of include parts (CTRL+Mouse)&lt;/li&gt;
+&lt;li&gt;Convenient toolbar actions
+&lt;ul&gt;&lt;li&gt;Table wizard&lt;/li&gt;
+&lt;li&gt;Code block templates&lt;/li&gt;
+&lt;li&gt;Possibility to toggle TOC on/off in output view&lt;/li&gt;
+&lt;li&gt;Switch preview layout variant&lt;/li&gt;
+&lt;li&gt;Jump to top of preview (internal preview panel only)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Additional editors included for
+&lt;ul&gt;&lt;li&gt;.ditaa files&lt;/li&gt;
+&lt;li&gt;.plantuml files&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Can convert one file or multiple files in selected folder
+&lt;ul&gt;&lt;li&gt;Formats supported:
+&lt;ul&gt;&lt;li&gt;markdown (*.md)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Links related to the plugin&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/de-jcup/eclipse-asciidoctor-editor/issues&quot; rel=&quot;nofollow&quot;&gt;Issue Tracker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/de-jcup/eclipse-asciidoctor-editor/releases&quot; rel=&quot;nofollow&quot;&gt;Release history&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/de-jcup/eclipse-asciidoctor-editor/wiki&quot; rel=&quot;nofollow&quot;&gt;Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLaBYAz_I_8tFByQ7EWnemjZgx7q-quDyp&quot; rel=&quot;nofollow&quot;&gt;YouTube Video playlist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Additional links&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://asciidoctor.org/docs/asciidoc-syntax-quick-reference&quot; rel=&quot;nofollow&quot;&gt;Asciidoctor Quickreference&lt;/a&gt; for details about syntax&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/stathissideris/ditaa&quot; rel=&quot;nofollow&quot;&gt;ditaa&lt;/a&gt;on github&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://plantuml.com/&quot; rel=&quot;nofollow&quot;&gt;plantuml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.graphviz.org/&quot; rel=&quot;nofollow&quot;&gt;graphviz&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Technical details&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;It uses internally asciidoctorj 1.5.6 and jruby to provide a WYSWYG integration.&lt;/li&gt;
+&lt;li&gt;When using plantuml (or graphviz itself) you must ensure you have installed graphviz on your machine&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Thu, 15 Mar 2018 19:51:28 +0000</pubDate>
+ <dc:creator>atregnaghi</dc:creator>
+ <guid isPermaLink="false">3976500 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/asciidoctor-editor#comments</comments>
+  </item>
+  <item>
+    <title>Red Hat CodeReady Studio (formerly Developer Studio)</title>
+    <link>http://marketplace.eclipse.org/content/red-hat-codeready-studio-formerly-developer-studio</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/128_jbds_icon.png&quot; width=&quot;80&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2019-07-09 11:09&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Red%20Hat%2C%20Inc.%22&quot;&gt;Red Hat, Inc.&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2014-04-11 14:28&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/jtools/listings&quot; title=&quot;JBoss Tools&quot;&gt;JBoss Tools&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Single Development Tool, Tailored for Extreme Productivity.&lt;/p&gt;
+&lt;p&gt;Red Hat CodeReady Studio provides superior support for your entire development lifecycle. It includes a broad set of tooling capabilities and support for multiple programming models and frameworks, including container development (deploying via OpenShift, &lt;a href=&quot;https://developers.redhat.com/products/cdk/overview/&quot; rel=&quot;nofollow&quot;&gt;Red Hat Container Development Kit&lt;/a&gt;, or Docker), Java™ Enterprise Edition 7, JavaServer Faces (JSF), Enterprise JavaBeans (EJB), Java Persistence API (JPA), and Hibernate®, JAX-RS with RESTEasy, Contexts Dependency Injection (CDI), &lt;a href=&quot;https://developers.redhat.com/products/fuse/overview/&quot; rel=&quot;nofollow&quot;&gt;Fuse Tooling&lt;/a&gt;,&lt;strong&gt; &lt;/strong&gt;HTML5, and many other popular technologies. It provides developer choice in supporting multiple JVMs, productivity with Maven, and in testing with Arquillian. It is fully tested and certified to ensure that all its plug-ins, runtime components, and their dependencies are compatible with each other.&lt;/p&gt;
+&lt;p&gt;In addition, Red Hat CodeReady Studio provides supplemental integration tooling in support of &lt;a href=&quot;https://developers.redhat.com/products/brms/overview/&quot; rel=&quot;nofollow&quot;&gt;Business Rules Management&lt;/a&gt; and &lt;a href=&quot;https://developers.redhat.com/products/datavirt/overview/&quot; rel=&quot;nofollow&quot;&gt;Data Virtualization&lt;/a&gt;. For complete product information and installation instructions for these features, including supported configurations and components, see the &lt;a href=&quot;https://access.redhat.com/documentation/en/red-hat-jboss-developer-studio-integration-stack/index.html&quot; rel=&quot;nofollow&quot;&gt;Product Documentation for Red Hat Developer Studio Integration Stack&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://developers.redhat.com/products/devstudio/overview/&quot; rel=&quot;nofollow&quot;&gt;More Info&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Fri, 11 Apr 2014 18:28:35 +0000</pubDate>
+ <dc:creator>jtools</dc:creator>
+ <guid isPermaLink="false">1616973 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/red-hat-codeready-studio-formerly-developer-studio#comments</comments>
+  </item>
+  </channel>
+</rss>

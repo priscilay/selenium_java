@@ -1,0 +1,25 @@
+package curso;
+
+import java.util.Scanner;
+
+public class Programa {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Quantos numeros vc vai digitar:  ");
+		int n = sc.nextInt();
+		int sum = 0;
+		for (int i = 1; i <= n; i++) {
+			System.out.println("Valor " + i + " é: ");
+			int x = sc.nextInt();
+
+			sum += x;
+		}
+
+		System.out.println("Soma igual a: " + sum);
+
+		sc.close();
+
+	}
+
+}

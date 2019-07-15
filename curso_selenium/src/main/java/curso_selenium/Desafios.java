@@ -1,11 +1,13 @@
 package curso_selenium;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import junit.framework.Assert;
@@ -14,6 +16,7 @@ public class Desafios {
 	
 	private WebDriver driver;
 	private DSL dsl;
+	private CampoTreinamentoPage page;
 	
 	@Before
 	public void init(){
@@ -23,33 +26,31 @@ public class Desafios {
 		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
 		System.getProperty("user.dir");
 		dsl = new DSL(driver);
+		page = new CampoTreinamentoPage(driver);
+		
 	}
 	
-	//@After
+	@After
 	public void fim() {
 		driver.quit();
 	}
 	
 	@Test
 	public void preencherForm() {
-		dsl.escrever("elementosForm:nome", "Priscila");
-		dsl.escrever("elementosForm:sobrenome", "Ribs");
-		dsl.clicar("elementosForm:sexo:1");
-		dsl.clicar("elementosForm:comidaFavorita:1");
-		dsl.selecionarCombo("elementosForm:escolaridade", "mestrado");
-		dsl.selecionarCombo("elementosForm:esportes", "Corrida");
-		dsl.escrever("elementosForm:sugestoes", "namaste");
-		dsl.clicar("elementosForm:cadastrar");
-		
-		//Corrigir os textos
-		Assert.assertTrue(driver.findElement(By.id("resultado")).getText().startsWith("Cadastrado!"));
-		Assert.assertEquals("Nome: Priscila", driver.findElement(By.id("descNome")).getText().endsWith("Priscila"));
-		Assert.assertEquals("Sobrenome: Ribs", driver.findElement(By.id("descSobrenome")).getText().endsWith("Ribs"));
-		Assert.assertEquals("Sexo: Feminino", driver.findElement(By.id("descSexo")).getText().endsWith("Feminino"));
-		Assert.assertEquals("Comida: Frango", driver.findElement(By.id("descComida")).getText().endsWith("Frango"));
-		Assert.assertEquals("Escolaridade: mestrado", driver.findElement(By.id("descEscolaridade")).getText().endsWith("mestrado"));
-		Assert.assertEquals("Esportes: Corrida", driver.findElement(By.id("descEsportes")).getText().endsWith("Corrida"));
-		Assert.assertEquals("Sugestoes: namaste", driver.findElement(By.id("descSugestoes")).getText().endsWith("namaste"));
+		page.setNome("Priscila");
+		page.setSobrenome("Ribs");
+		page.generoFeminino();
+		page.comidaVegan();
+		page.setEsportes("Corrida");
+		page.setEscolaridade("Mestrado");		
+		page.setSugestoes("Namaste");
+		page.cadastrar();
+		Assert.assertTrue(page.obterNomeCadastro().endsWith("Priscila"));
+		Assert.assertEquals("Sobrenome: Ribs", page.obterSobrenomeCadastro());
+		Assert.assertEquals("Sexo: Feminino", page.obterSexoCadastro());
+		Assert.assertEquals("Comida: Vegetariano", page.obterComidaCadastro());
+		Assert.assertEquals("Escolaridade: mestrado", page.obterEscolaridadeCadastro());
+		Assert.assertEquals("Esportes: Corrida", page.obterEsportesCadastro());
 	}
 	
 
@@ -86,17 +87,25 @@ public class Desafios {
 	
 	@Test
 	public void validarNomeObrigatorio() {
-		dsl.clicar("elementosForm:cadastrar");
-		Assert.assertEquals("Nome eh obrigatorio", dsl.msgAlert());
-		dsl.okAlert();
+		page.cadastrar();
+		Assert.assertEquals("Nome eh obrigatorio", dsl.msgAlertAcept());
 	}
 	
 	@Test
 	public void validarSobrenomeObrigatorio() {
 		dsl.escrever("elementosForm:nome", "Pri");
 		dsl.clicar("elementosForm:cadastrar");
-		Assert.assertEquals("Sobrenome eh obrigatorio", dsl.msgAlert());
-		dsl.okAlert();
+		Assert.assertEquals("Sobrenome eh obrigatorio", dsl.msgAlertAcept());
+	}
+	
+	@Test
+	public void frameEscondido(){
+		WebElement frame = driver.findElement(By.id("frame2"));
+		dsl.executarJS("window.scrollBy(0, arguments[0])", frame.getLocation().y);
+		dsl.entrarFrame("frame2");
+		dsl.clicar("frameButton");
+		String msg = dsl.msgAlertAcept();
+		Assert.assertEquals("Frame OK!", msg);
 	}
 }
 	
