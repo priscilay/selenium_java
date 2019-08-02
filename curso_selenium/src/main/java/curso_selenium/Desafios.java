@@ -45,12 +45,12 @@ public class Desafios {
 		page.setEscolaridade("Mestrado");		
 		page.setSugestoes("Namaste");
 		page.cadastrar();
-		Assert.assertTrue(page.obterNomeCadastro().endsWith("Priscila"));
-		Assert.assertEquals("Sobrenome: Ribs", page.obterSobrenomeCadastro());
-		Assert.assertEquals("Sexo: Feminino", page.obterSexoCadastro());
-		Assert.assertEquals("Comida: Vegetariano", page.obterComidaCadastro());
-		Assert.assertEquals("Escolaridade: mestrado", page.obterEscolaridadeCadastro());
-		Assert.assertEquals("Esportes: Corrida", page.obterEsportesCadastro());
+		Assert.assertEquals("Priscila",page.obterNomeCadastro());
+		Assert.assertEquals("Ribs", page.obterSobrenomeCadastro());
+		Assert.assertEquals("Feminino", page.obterSexoCadastro());
+		Assert.assertEquals("Vegetariano", page.obterComidaCadastro());
+		Assert.assertEquals("mestrado", page.obterEscolaridadeCadastro());
+		Assert.assertEquals("Corrida", page.obterEsportesCadastro());
 	}
 	
 

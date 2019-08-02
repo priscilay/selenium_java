@@ -176,6 +176,4 @@ public class DSL {
 		}
 		return idColuna;
 	}
-	
-
 }
