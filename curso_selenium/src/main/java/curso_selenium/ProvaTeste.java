@@ -1,6 +1,0 @@
-package curso_selenium;
-
-public class ProvaTeste {
-	
-
-}
