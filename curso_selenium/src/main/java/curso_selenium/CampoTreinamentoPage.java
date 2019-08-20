@@ -17,6 +17,10 @@ public class CampoTreinamentoPage {
 		dsl.escrever("elementosForm:nome", nome);
 	}
 	
+	public String getNome(){
+		return dsl.obterTexto("elementosForm:nome");
+	}
+	
 	public void setSobrenome(String sobrenome){
 		dsl.escrever("elementosForm:sobrenome", sobrenome);
 	}

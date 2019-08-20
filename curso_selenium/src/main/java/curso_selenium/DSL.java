@@ -78,7 +78,7 @@ public class DSL {
 	}
 	
 	public List<String> obterValoresCombo(String id) {
-		WebElement element = driver.findElement(By.id("elementosForm:esportes"));
+		WebElement element = driver.findElement(By.id(id));
 		Select combo = new Select(element);
 		List<WebElement> allSelectedOptions = combo.getAllSelectedOptions();
 		List<String> valores = new ArrayList<String>();
@@ -95,10 +95,29 @@ public class DSL {
 		return texto;
 	}
 	
+	public String msgAlert(){
+		Alert alert = driver.switchTo().alert();
+		String texto = alert.getText();
+		return texto;
+	}
+	
 	public void okAlert(){
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
 	}
+	
+	public void confirmAlert(){
+		Alert alertCconfirm = driver.switchTo().alert();
+		alertCconfirm.dismiss();
+	}
+	
+	public String escreverAlert(String text){
+		Alert alert = driver.switchTo().alert();
+		alert.sendKeys(text);
+		return text;
+	}
+	
+	
 	
 	public void clicarLink(String linkText){
 		driver.findElement(By.linkText(linkText)).click();
@@ -148,7 +167,7 @@ public class DSL {
 		int idColunaBotao = obterIndiceColuna(colunaBotao, tabela);
 		System.out.println(idColunaBotao);
 		
-		//clicar no botao da celular encontrada
+		//clicar no botao da celula encontrada
 		WebElement celula = tabela.findElement(By.xpath(".//tr["+idLinha+"]/td["+idColunaBotao+"]"));
 		celula.findElement(By.xpath(".//input")).click();
 	}

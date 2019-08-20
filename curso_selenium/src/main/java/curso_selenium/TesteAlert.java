@@ -3,11 +3,8 @@ package curso_selenium;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import junit.framework.Assert;
@@ -31,44 +28,40 @@ public class TesteAlert {
 	
 	@After
 	public void fim() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 
 	@Test
 	public void clicarAlerta() {
-		WebElement botaoAlert = driver.findElement(By.id("alert"));
-		botaoAlert.click();
-		Alert alert =  driver.switchTo().alert();
-		String textAlert = alert.getText();
+		dsl.clicar("alert");
+		String textAlert = dsl.msgAlert();
 		Assert.assertEquals("Alert Simples", textAlert);
-		alert.accept();
-		WebElement textName = driver.findElement(By.id("elementosForm:nome"));
-		textName.sendKeys(textAlert);
-		//Assert.assertEquals("Alert Simples", )
-
+		dsl.okAlert();
+		page.setNome(textAlert);
 	}
 	
 	@Test
 	public void clicarAlertaConfirm() {
-		WebElement botaoAlertConfirm = driver.findElement(By.id("confirm"));
-		botaoAlertConfirm.click();
-		Alert alertCconfirm = driver.switchTo().alert();
-		alertCconfirm.dismiss();
-		Assert.assertEquals("Negado", alertCconfirm.getText());
-		alertCconfirm.accept();
+		dsl.clicar("confirm");
+		dsl.confirmAlert();
+		String text = dsl.msgAlert();
+		Assert.assertEquals("Negado", text);
+		dsl.okAlert();
 	}
 	
 	@Test
 	public void clicarAlertaPrompt() {
-		WebElement botaoAlertPrompt = driver.findElement(By.id("prompt"));
-		botaoAlertPrompt.click();
-		Alert alertPrompt = driver.switchTo().alert();
-		Assert.assertEquals("Digite um numero", alertPrompt.getText());
-		alertPrompt.sendKeys("1111");
-		alertPrompt.accept();
-		Assert.assertEquals("Era 1111?", alertPrompt.getText());
-		alertPrompt.accept();
-		Assert.assertEquals(":D", alertPrompt.getText());
+		dsl.clicar("prompt");
+		String text = dsl.msgAlert();
+		Assert.assertEquals("Digite um numero", text);
+		dsl.escreverAlert("1111");
+		dsl.okAlert();
+		String text2 = dsl.msgAlert();
+		Assert.assertEquals("Era 1111?", text2);
+		dsl.okAlert();
+		String text3 = dsl.msgAlert();
+		Assert.assertEquals(":D", text3);
+		dsl.okAlert();
 	}
 }
