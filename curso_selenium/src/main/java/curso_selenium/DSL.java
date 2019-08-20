@@ -39,6 +39,14 @@ public class DSL {
 		return driver.findElement(By.id(id)).isSelected();
 	}
 	
+	public void clicarRadio(By by) {
+		driver.findElement(by).click();
+	}
+	
+	public void clicarRadio(String id) {
+		clicarRadio(By.id(id));
+	}
+	
 	public void selecionarCombo(String id, String valor){
 		WebElement element = driver.findElement(By.id(id));
 		Select combo = new Select(element);
