@@ -125,6 +125,11 @@ public class DSL {
 		return text;
 	}
 	
+	public void selecionarComboPrime(String radical, String valor){
+		clicarRadio(By.xpath(".//*[@id='" + radical + "_focus']/../..//span"));
+		clicarRadio(By.xpath(".//ul[@id='"+ radical +"_items']/li[.='"+ valor +"']"));
+	}
+	
 	
 	
 	public void clicarLink(String linkText){
