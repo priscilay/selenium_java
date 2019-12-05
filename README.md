@@ -5,3 +5,4 @@ Estrutura do framework criado no curso:
 3 - Reuso do browser
 4 - Screenshot ao final do teste
 5 - Chaveamento para outros browsers
+6 - PADRONIZAÇÃO
