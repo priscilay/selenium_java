@@ -1,46 +1,36 @@
-package curso_selenium;
+package test;
+import static core.DriverFactory.getDriver;
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class TesteCampoTreinamento {
+import core.BaseTest;
+import core.DSL;
+import page.CampoTreinamentoPage;
+
+public class TesteCampoTreinamento extends BaseTest {
 	
-	private WebDriver driver;
 	private DSL dsl;
 	private CampoTreinamentoPage page;
 	
 	@Before
 	public void init(){
-		System.setProperty("webdriver.chrome.driver", "\\Users\\priscila.franca\\Downloads\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().setSize(new Dimension(1200, 765));
-		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
-		System.getProperty("user.dir");
-		dsl = new DSL(driver);
-		page = new CampoTreinamentoPage(driver);
+		getDriver().get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+		dsl = new DSL();
+		page = new CampoTreinamentoPage();
 		}
-	
-	@After
-	public void fim() {
-		//driver.quit();
-	}
 
 
-	
+	@Test
 	public void testeTextField(){
-		driver.findElement(By.id("elementosForm:nome")).sendKeys("Priscila");
-		Assert.assertEquals("Prisila", driver.findElement(By.id("elementosForm:nome")).getAttribute("value"));
+		getDriver().findElement(By.id("elementosForm:nome")).sendKeys("Priscila");
+		Assert.assertEquals("Priscila", getDriver().findElement(By.id("elementosForm:nome")).getAttribute("value"));
 	}
 	
 	@Test
@@ -55,7 +45,7 @@ public class TesteCampoTreinamento {
 	public void testeTextArea() {
 		page.setSugestoes("Namaste");
 		String esperado = dsl.obterValorTexto("elementosForm:sugestoes");
-		Assert.assertEquals("Priscila", esperado);
+		Assert.assertEquals("Namaste", esperado);
 	}
 	
 	@Test
@@ -99,10 +89,9 @@ public class TesteCampoTreinamento {
 	
 	@Test
 	public void testeLinks() {
-		WebElement link = driver.findElement(By.linkText("Voltar"));
+		WebElement link = getDriver().findElement(By.linkText("Voltar"));
 		link.click();
-		Assert.assertEquals("Voltou!", driver.findElement(By.id("Resultado")).getText());
-		driver.quit();
+		Assert.assertEquals("Voltou!", getDriver().findElement(By.id("Resultado")).getText());
 	}
 	
 	
@@ -114,16 +103,16 @@ public class TesteCampoTreinamento {
 		Assert.assertEquals("Cuidado onde clica, muitas armadilhas...", textoPage2);
 	}
 	
-	@Test
-	public void testJavascript(){
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		//js.executeScript("alert('Testando js via selenium')");
-		js.executeScript("document.getElementById('elementosForm:nome').value = 'Escrito via js'");
-		js.executeScript("document.getElementById('elementosForm:sobrenome').type = 'radio'");
-		
-		WebElement element = driver.findElement(By.id("elementosForm:nome"));
-		js.executeScript("arguments[0].style.border = arqguments[1]", element, "solid 4px red");
-	}
+//	@Test
+//	public void testJavascript(){
+//		JavascriptExecutor js = (JavascriptExecutor) getDriver();
+//		//js.executeScript("alert('Testando js via selenium')");
+//		js.executeScript("document.getElementById('elementosForm:nome').value = 'Escrito via js'");
+//		js.executeScript("document.getElementById('elementosForm:sobrenome').type = 'radio'");
+//		
+//		WebElement element = getDriver().findElement(By.id("elementosForm:nome"));
+//		js.executeScript("arguments[0].style.border = arqguments[1]", element, "solid 4px red");
+//	}
 	
 	@Test
 	public void deveClicarBotaoTabela(){

@@ -1,4 +1,4 @@
-package curso_selenium;
+package test;
 
 import org.junit.Assert;
 import org.junit.Test;

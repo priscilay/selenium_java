@@ -1,5 +1,7 @@
-package curso_selenium;
+package test;
 
+import static core.DriverFactory.getDriver;
+import static core.DriverFactory.killDriver;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,28 +9,26 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import core.DSL;
+import core.DriverFactory;
 import junit.framework.Assert;
+import page.CampoTreinamentoPage;
 
 public class TesteAlert {
 	
-	private WebDriver driver;
 	private DSL dsl;
 	private CampoTreinamentoPage page;
 	
 	@Before
 	public void init(){
-		System.setProperty("webdriver.chrome.driver", "\\Users\\priscila.franca\\Downloads\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().setSize(new Dimension(1200, 765));
-		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
-		System.getProperty("user.dir");
-		dsl = new DSL(driver);
-		page = new CampoTreinamentoPage(driver);
+		getDriver().get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+		dsl = new DSL();
+		page = new CampoTreinamentoPage();
 		}
 	
 	@After
 	public void fim() {
-		driver.quit();
+		killDriver();
 	}
 	
 

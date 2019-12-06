@@ -1,4 +1,5 @@
-package curso_selenium;
+package core;
+import static core.DriverFactory.getDriver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,20 +7,15 @@ import java.util.List;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class DSL {
-	private WebDriver driver;
 	
-	public DSL(WebDriver driver){
-		this.driver = driver;
-	}
 	
 	public void escrever(By by, String texto){
-		driver.findElement(by).clear();
-		driver.findElement(by).sendKeys(texto);
+		getDriver().findElement(by).clear();
+		getDriver().findElement(by).sendKeys(texto);
 		
 	}
 	
@@ -28,19 +24,19 @@ public class DSL {
 	}
 	
 	public String obterValorTexto(String id_campo){
-		return driver.findElement(By.id(id_campo)).getAttribute("value");
+		return getDriver().findElement(By.id(id_campo)).getAttribute("value");
 	}
 	
 	public void clicar(String id){
-		driver.findElement(By.id(id)).click();
+		getDriver().findElement(By.id(id)).click();
 	}
 	
 	public boolean radioMarcado (String id){
-		return driver.findElement(By.id(id)).isSelected();
+		return getDriver().findElement(By.id(id)).isSelected();
 	}
 	
 	public void clicarRadio(By by) {
-		driver.findElement(by).click();
+		getDriver().findElement(by).click();
 	}
 	
 	public void clicarRadio(String id) {
@@ -48,25 +44,25 @@ public class DSL {
 	}
 	
 	public void selecionarCombo(String id, String valor){
-		WebElement element = driver.findElement(By.id(id));
+		WebElement element = getDriver().findElement(By.id(id));
 		Select combo = new Select(element);
 		combo.selectByVisibleText(valor);
 	}
 	
 	public void deselecionarCombo(String id, String valor) {
-		WebElement element = driver.findElement(By.id(id));
+		WebElement element = getDriver().findElement(By.id(id));
 		Select combo = new Select(element);
 		combo.deselectByVisibleText(valor);
 	}
 	
 	public String obterValorCombo(String id) {
-		WebElement element = driver.findElement(By.id(id));
+		WebElement element = getDriver().findElement(By.id(id));
 		Select combo = new Select(element);
 		return combo.getFirstSelectedOption().getText();
 	}
 	
 	public int obterQuantidadeOpcoesCombo(String id){
-		WebElement element = driver.findElement(By.id(id));
+		WebElement element = getDriver().findElement(By.id(id));
 		Select combo = new Select(element);
 		List<WebElement> options = combo.getOptions();
 		return options.size();
@@ -74,7 +70,7 @@ public class DSL {
 	
 	
 	public boolean verificarOpcaoCombo(String id, String opcao){
-		WebElement element = driver.findElement(By.id(id));
+		WebElement element = getDriver().findElement(By.id(id));
 		Select combo = new Select(element);
 		List<WebElement> options = combo.getOptions();
 		for(WebElement option: options) {
@@ -86,7 +82,7 @@ public class DSL {
 	}
 	
 	public List<String> obterValoresCombo(String id) {
-		WebElement element = driver.findElement(By.id(id));
+		WebElement element = getDriver().findElement(By.id(id));
 		Select combo = new Select(element);
 		List<WebElement> allSelectedOptions = combo.getAllSelectedOptions();
 		List<String> valores = new ArrayList<String>();
@@ -97,30 +93,30 @@ public class DSL {
 	}
 	
 	public String msgAlertAcept(){
-		Alert alert = driver.switchTo().alert();
+		Alert alert = getDriver().switchTo().alert();
 		String texto = alert.getText();
 		alert.accept();
 		return texto;
 	}
 	
 	public String msgAlert(){
-		Alert alert = driver.switchTo().alert();
+		Alert alert = getDriver().switchTo().alert();
 		String texto = alert.getText();
 		return texto;
 	}
 	
 	public void okAlert(){
-		Alert alert = driver.switchTo().alert();
+		Alert alert = getDriver().switchTo().alert();
 		alert.accept();
 	}
 	
 	public void confirmAlert(){
-		Alert alertCconfirm = driver.switchTo().alert();
+		Alert alertCconfirm = getDriver().switchTo().alert();
 		alertCconfirm.dismiss();
 	}
 	
 	public String escreverAlert(String text){
-		Alert alert = driver.switchTo().alert();
+		Alert alert = getDriver().switchTo().alert();
 		alert.sendKeys(text);
 		return text;
 	}
@@ -133,11 +129,11 @@ public class DSL {
 	
 	
 	public void clicarLink(String linkText){
-		driver.findElement(By.linkText(linkText)).click();
+		getDriver().findElement(By.linkText(linkText)).click();
 	}
 	
 	public String obterTexto(By by){
-		return driver.findElement(by).getText();
+		return getDriver().findElement(by).getText();
 	}
 	
 	public String obterTexto(String id){
@@ -148,19 +144,19 @@ public class DSL {
 	/********* Frames e Janelas ************/
 	
 	public void entrarFrame(String id) {
-		driver.switchTo().frame(id);
+		getDriver().switchTo().frame(id);
 	}
 	
 	public void sairFrame(){
-		driver.switchTo().defaultContent();
+		getDriver().switchTo().defaultContent();
 	}
 	
 	public void trocarJanela(String id) {
-		driver.switchTo().window(id);
+		getDriver().switchTo().window(id);
 	}
 	
 	public Object executarJS(String cmd, Object...param){
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		JavascriptExecutor js = (JavascriptExecutor) getDriver();
 		return js.executeScript(cmd, param);
 	}
 	
@@ -169,7 +165,7 @@ public class DSL {
 	
 	public void clicarBotaoTabela(String colunaBusca, String valor, String colunaBotao, String idTabela){
 		//procurar coluna do registro
-		WebElement tabela = driver.findElement(By.xpath(".//*[@id='elementosForm:tableUsuarios']"));
+		WebElement tabela = getDriver().findElement(By.xpath(".//*[@id='elementosForm:tableUsuarios']"));
 		int idColuna = obterIndiceColuna(colunaBusca, tabela);
 
 		//encontrar a linha do registro

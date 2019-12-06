@@ -1,35 +1,32 @@
-package curso_selenium;
+package test;
+
+import static core.DriverFactory.getDriver;
+import static core.DriverFactory.killDriver;
 
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
+import core.DSL;
 
 public class TestePrimeFaces {
-	private WebDriver driver;
 	private DSL dsl;
 	
 	@Before
 	public void init(){
-		System.setProperty("webdriver.chrome.driver", "\\Users\\priscila.franca\\Downloads\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().setSize(new Dimension(1200, 765));
-		System.getProperty("user.dir");
-		dsl = new DSL(driver);
+		dsl = new DSL();
 		}
 	
 	@After
 	public void fim() {
-		driver.quit();
+		killDriver();
 	}
 	
 	@Test
 	public void radioPrime() {
-		driver.get("https://www.primefaces.org/showcase/ui/input/oneRadio.xhtml");
+		getDriver().get("https://www.primefaces.org/showcase/ui/input/oneRadio.xhtml");
 		dsl.clicarRadio(By.xpath("//input[@id='j_idt701:console:0']/../..//span"));
 		Assert.assertTrue(dsl.radioMarcado("j_idt701:console:0"));
 		dsl.clicarRadio(By.xpath(".//label[.='PS4']/..//span"));
@@ -38,7 +35,7 @@ public class TestePrimeFaces {
 	
 	@Test
 	public void selectPrime() {
-		driver.get("https://www.primefaces.org/showcase/ui/input/oneMenu.xhtml");
+		getDriver().get("https://www.primefaces.org/showcase/ui/input/oneMenu.xhtml");
 		dsl.selecionarComboPrime("j_idt701:console", "PS4");
 		String text = dsl.obterTexto("j_idt701:console_label");
 		Assert.assertEquals("PS4", text);

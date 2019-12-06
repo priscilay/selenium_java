@@ -1,40 +1,34 @@
-package curso_selenium;
+package test;
+
+import static core.DriverFactory.getDriver;
+import static core.DriverFactory.killDriver;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
+import core.BaseTest;
+import core.DSL;
 import junit.framework.Assert;
+import page.CampoTreinamentoPage;
 
-public class Desafios {
+public class Desafios extends BaseTest{
 	
-	private WebDriver driver;
 	private DSL dsl;
 	private CampoTreinamentoPage page;
 	
 	@Before
 	public void init(){
-		System.setProperty("webdriver.chrome.driver", "\\Users\\priscila.franca\\Downloads\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().setSize(new Dimension(1200, 765));
-		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
-		System.getProperty("user.dir");
-		dsl = new DSL(driver);
-		page = new CampoTreinamentoPage(driver);
-		
+		getDriver().get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+		dsl = new DSL();
+		page = new CampoTreinamentoPage();
 	}
 	
-	@After
-	public void fim() {
-		driver.quit();
-	}
-	
+
 	@Test
 	public void preencherForm() {
 		page.setNome("Priscila");
@@ -56,33 +50,33 @@ public class Desafios {
 
 	@Test
 	public void testeFrame() {
-		driver.switchTo().frame("frame1");
-		driver.findElement(By.id("frameButton")).click();
-		Alert alert = driver.switchTo().alert();
+		getDriver().switchTo().frame("frame1");
+		getDriver().findElement(By.id("frameButton")).click();
+		Alert alert = getDriver().switchTo().alert();
 		String msg = alert.getText();
 		Assert.assertEquals("Frame OK!", msg);
 		alert.accept();
-		driver.switchTo().defaultContent();
-		driver.findElement(By.id("elementosForm:nome")).sendKeys(msg);
+		getDriver().switchTo().defaultContent();
+		getDriver().findElement(By.id("elementosForm:nome")).sendKeys(msg);
 	}
 	
 	@Test
 	public void testeWindow() {
 		dsl.clicar("buttonPopUpEasy");
-		driver.switchTo().window("");
-		driver.findElement(By.tagName("textarea")).sendKeys("ok");
-		driver.close();
+		getDriver().switchTo().window("");
+		getDriver().findElement(By.tagName("textarea")).sendKeys("ok");
+		getDriver().close();
 	}
 	
 	@Test
 	public void testeWindowSemTitulo() {
-		driver.findElement(By.id("buttonPopUpEasy")).click();
-		System.out.println(driver.getWindowHandles());
-		System.out.println(driver.getWindowHandle());
-		driver.switchTo().window((String)driver.getWindowHandles().toArray()[0]);
-		driver.findElement(By.tagName("textarea")).sendKeys("Foi?");
-		driver.switchTo().window((String)driver.getWindowHandles().toArray()[1]);
-		driver.findElement(By.tagName("textarea")).sendKeys("Foi?");
+		getDriver().findElement(By.id("buttonPopUpEasy")).click();
+		System.out.println(getDriver().getWindowHandles());
+		System.out.println(getDriver().getWindowHandle());
+		getDriver().switchTo().window((String)getDriver().getWindowHandles().toArray()[0]);
+		getDriver().findElement(By.tagName("textarea")).sendKeys("Foi?");
+		getDriver().switchTo().window((String)getDriver().getWindowHandles().toArray()[1]);
+		getDriver().findElement(By.tagName("textarea")).sendKeys("Foi?");
 	}
 	
 	@Test
@@ -100,7 +94,7 @@ public class Desafios {
 	
 	@Test
 	public void frameEscondido(){
-		WebElement frame = driver.findElement(By.id("frame2"));
+		WebElement frame = getDriver().findElement(By.id("frame2"));
 		dsl.executarJS("window.scrollBy(0, arguments[0])", frame.getLocation().y);
 		dsl.entrarFrame("frame2");
 		dsl.clicar("frameButton");
